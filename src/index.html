@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Comment Test</title>
+</head>
+
+<body>
+
+    <h1>카카오 댓글</h1>
+    <ul id="list"></ul>
+    <div>
+        <button id="prev">이전</button>
+        <button id="next">다음</button>
+    </div>
+    <form name=commentForm>
+        <div>
+            <b>이름 :</b>
+            <input type=text name=commentName>
+        </div>
+        <div>
+            <b>댓글 :</b>
+            <input type=text name=commentMsg>
+        </div>
+        <input type=button name=add value="쓰기">
+    </form>
+    <script type='text/javascript' src="comment.js"></script>
+    <script type='text/javascript'>
+
+        onload = Comment.init;
+    </script>
+</body>
+
+</html>
